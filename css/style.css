@@ -14,9 +14,8 @@ body {
 }
 
 .menu ul {
-    position: relative;
-    left: 50%;
-    float: left;
+    margin-right: 20px;
+    float: right;
 }
 
 .menu li {
@@ -31,9 +30,10 @@ body {
     font-weight: 400;
     padding: 9px 13px;
     text-decoration: none;
+    clear: both;
 }
 
-.menu ul li a:hover {
+.menu a:hover {
     background-color: #4eabda
 }
 
@@ -41,64 +41,20 @@ body {
     color: #fff;
 }
 
-.b {
+.flag {
     width: 30px;
     margin: -8px;
-    padding: 1p;
     float: left;
 }
 
-.line {
-    position: relative;
+.menu2 {
     height: 29px;
     border-left: 1px solid #ccc;
-}
-
-.line li {
-    color: white;
-}
-
-.menu2 ul {
-    position: relative;
-    left: 50%;
-    float: left;
-    top: -31px;
-}
-
-.menu2 li {
-    display: inline-block;
+    float: right;
+    margin-left: 10px;
 }
 
 .menu2 li a {
-    display: block;
-    font-family: Helvetica Neue, Arial, sans-serif;
-    color: white;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 9px 13px;
-    text-decoration: none;
-}
-
-.menu2 ul li a:hover {
-    background-color: #4eabda
-}
-
-.menu2 li a:hover {
-    color: #fff;
-}
-
-.b {
-    margin: -8px;
-    float: left;
-}
-
-.line {
-    position: relative;
-    height: 29px;
-    border-left: 1px solid #ccc;
-}
-
-.line li {
     color: white;
 }
 
@@ -106,44 +62,135 @@ body {
     background: linear-gradient(to top, #2e7ac4, #50afdc);
 }
 
-.formtitle {
-    position: relative;
+.form1 {
     margin: 0 auto;
-    top: 140px;
-    background: rgba( 0, 0, 0, 0.7);
+    margin-top: 140px;
+    background: rgba( 0, 0, 0, 0.6);
     width: 450px;
     height: 50px;
 }
 
-.formtitle p {
+.form1 p {
     font-family: Helvetica Neue, Arial, sans-serif;
     line-height: 55px;
-    margin-left: 167px;
+    margin-left: 165px;
     color: white;
     font-size: 22px;
 }
 
-.form {
-    position: relative;
-    top: 141px;
-    margin: 0 auto;
+.form2 {
+    margin: 1px auto;
     width: 450px;
-    height: 440px;
-    background: rgba( 0, 0, 0, 0.7);
+    height: 450px;
+    background: rgba( 0, 0, 0, 0.6);
+    clear: both;
 }
 
 .icon {
     position: relative;
     top: 34px;
-    left: 90px;
+    left: 106px;
 }
 
 .facebook {
-    width: 40%;
+    width: 50%;
 }
 
 .forms {
-position: relative;
-top:120px;
+    margin-top: 70px;
+    line-height: 40px;
+}
 
+.ou_line {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: #696c68;
+    overflow: hidden;
+}
+
+.ou_line p {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.ou_line p:before,
+.ou_line p:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 22%;
+  height: 1px;
+  vertical-align: middle;
+  background: #666666;
+}
+.ou_line p:before {
+  left: -10px;
+  margin-left: -50%;
+}
+.ou_line p:after {
+  left: 10px;
+  margin-right: -50%;
+}
+
+
+.forms {
+    text-align: center;
+    display: block;
+}
+
+span {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    color: #cccccc;
+    font-size: 13px;
+}
+
+.names input {
+    width: 230px;
+    font-size: 13px;
+    color: white;
+    padding: 6px 0 4px 10px;
+    border: 1px;
+    border-bottom: 1px solid #484846;
+    background: #0f0f0f;
+}
+
+.names input:hover {
+    background: #1b5288;
+}
+
+.create input {
+    width: 130px;
+    font-size: 13px;
+    padding: 10px 10px 10px 10px;
+    border: 1px;
+    border-bottom: 1px solid #484846;
+    border-radius: 4px;
+    color: white;
+    background: linear-gradient(to top, #2e7ac4, #50afdc);
+}
+
+.create input:hover {
+    background: linear-gradient(to top, #2e3ac4, #51afdc);
+}
+
+.terms {
+    font-family: Arial;
+    color: #cccccc;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 11px;
+    line-height: 16px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.terms a:hover {
+    color: white;
 }
